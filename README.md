@@ -54,6 +54,8 @@ console.log(await DnsEmailValidation.verify('mail@gmail.com')); // { verificatio
 console.log(await DnsEmailValidation.verify('mail@example.com')); // { verification: false, reason: [ 'MX' ] }
 ```
 
+Example: [dns-email-validation-example](https://github.com/0xdino/dns-email-validation-example)
+
 ### License
 
 Licensed under MIT ([LICENSE](LICENSE) / http://opensource.org/licenses/MIT)

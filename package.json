@@ -1,6 +1,6 @@
 {
   "name": "dns-email-validation",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Deep validation for the existence of an email address with validation of DNS records.",
   "keywords": [
     "email",
@@ -12,22 +12,25 @@
   "homepage": "https://github.com/0xdino/dns-email-validation",
   "author": "https://github.com/0xdino",
   "license": "MIT",
-  "main": ".src/index.ts",
-  "exports": [
-    "./src/**/*.{ts}"
-  ],
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
   "files": [
     "LICENSE",
     "README.md",
-    "tsconfig.json",
     "src"
   ],
+  "engines": {
+    "node": ">= 12.9.0"
+  },
   "scripts": {
+    "build": "tsc",
     "test": "jest",
     "test:cov": "jest --coverage",
     "lint": "eslint \"**/*.ts\" --fix",
-    "prettier:check": "prettier --check ./**/*.{ts,js,json,*rc}",
-    "prettier:write": "prettier --write ./**/*.{ts,js,json,*rc}",
+    "prettier:check": "prettier --check ./**/*.{ts,json,*rc}",
+    "prettier:write": "prettier --write ./**/*.{ts,json,*rc}",
     "precommit": "pnpm lint",
     "prepare": "husky install",
     "prepush": "pnpm test"

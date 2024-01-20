@@ -1,4 +1,4 @@
-import DnsEmailValidation from '../src';
+import DnsEmailValidation from '../dist';
 
 describe('DnsEmailValidation', () => {
   it('Checking an incorrectly specified email address', async () => {

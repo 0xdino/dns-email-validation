@@ -8,8 +8,11 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "noImplicitAny": true,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "outDir": "dist",
+    "declaration": true,
+    "allowJs": true,
   },
   "include": ["**/*.ts", "**/*.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist", "test"],
 }
